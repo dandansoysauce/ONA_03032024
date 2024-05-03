@@ -19,5 +19,6 @@ $> dotnet run
 
 This will run under `localhost:5178` and will launch the Swagger page.
 
-## Note
-I wasn't able to initialize the git repository for the whole project before I started coding, that's why this repository has one big commit.
+## Notes
+* I wasn't able to initialize the git repository for the whole project before I started coding, that's why this repository has one big commit.
+* I wasn't able to finish the Enhancements as well because I feel like I didn't have enough time.
