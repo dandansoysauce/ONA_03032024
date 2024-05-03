@@ -1,0 +1,17 @@
+.c-home-container {
+  padding: 20px;
+
+  .c-home-additem {
+    margin-bottom: 12px;
+  }
+
+  .c-home-card {
+    margin-bottom: 12px;
+
+    .c-home-card__actions {
+      button {
+        margin-right: 5px;
+      }
+    }
+  }
+}

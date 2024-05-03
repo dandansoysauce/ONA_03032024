@@ -1,0 +1,21 @@
+<div class="c-home-container">
+  <h1>Home</h1>
+  <a mat-raised-button color="primary" [routerLink]="['/add-item']" class="c-home-additem">Add Item</a>
+  <div *ngFor="let item of items; trackBy:trackItemId" class="c-home-card">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-subtitle>Price: ${{ item.price }}</mat-card-subtitle>
+        <mat-card-subtitle>Stocks: {{ item.quantity }}</mat-card-subtitle>
+        <mat-card-title>{{ item.name }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ item.description }}</p>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      <mat-card-actions class="c-home-card__actions">
+        <a mat-raised-button color="primary" [routerLink]="['/item-detail', item.id]">View</a>
+        <button mat-button (click)="deleteItem(item.id!)">DELETE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
